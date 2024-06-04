@@ -1,0 +1,109 @@
+Prompt Patterns for Navigation
+
+- Allows accessing sensitive information without directly generating it, avoiding potential inaccuracies
+- If AI guides incorrectly, users can recognize the information is wrong or missing, limiting harm
+- Leverages and enhances existing validated data sources instead of creating new unverified outputs
+- Saves users time finding information themselves through complex apps/systems
+- Translates natural language questions into system navigation
+
+Navigation is an effective way to use AI when dealing with sensitive information. Instead of generating sensitive details
+directly, Generative AI can guide users to  the information in an existing system. The goal is to take the user to the
+information rather than to potentially generate inaccurate information.
+
+For example, consider a healthcare mobile app. Patients could ask questions like "What is my next appointment?" Rather
+than generate appointment details which could be inaccurate, the AI can respond with where to find that information in
+the app, such as the Appointment Scheduler screen.
+
+If the AI makes a mistake and guides the user to the wrong location, the consequences are minor - the user simply sees
+that the information is not there. In contract, if the information is generated as text, it could be completely inaccurate
+leading to harm. For example, if medical appointment details were generated incorrectly, it could lead to much greater
+harm than if the Generative AI takes the user to the wrong screen in a mobile app.
+
+Potential issues to consider:
+
+- AI could still guide to the wrong screen, causing minor frustration
+- Some oversight needed to avoid navigating users to info they shouldn't access
+- May need to clarify when info is not available rather than just navigating incorrectly
+
+Overall, navigation represents a safer application for AI with sensitive data. It provides assistance to users while
+relying on existing validated information sources. When applying AI to sensitive tasks, re-framing the problem as a
+navigation challenge can open up new possibilities to responsibly leverage these technologies.
+
+
+Navigation Patterns:
+1. Direct Navigation Pattern
+Tell me where I can find X. A description of the different locations where information can be found are below.
+
+-------------
+
+Identifier for Location, Description of Information in Location
+
+Identifier for Location2, Description of Information in Location2
+
+...
+
+
+Examples:
+"""
+
+Tell me where I can find information about my next appointment using the list of information locations below.
+
+-------------------
+
+Login Screen: This screen allows users to log in to the mobile healthcare app using their username and password. It may
+also have options to register a new account or reset a forgotten password.
+
+Home Screen: The home screen is the main screen of the app, which users can access after logging in. It may include:
+
+- User profile information (e.g. name, photo, age, gender)
+- Quick access to frequently used features (e.g. appointment scheduling, medication tracker, health tracker)
+- Dashboard with charts and graphs to track health progress and goals
+- Notifications for upcoming appointments or reminders for medication
+
+Appointment Scheduler: This screen allows users to schedule, modify, or cancel appointments with healthcare providers.
+Information on this screen may include:
+
+- Calendar view of available dates and times
+- List of healthcare providers with available time slots
+- Confirmation of scheduled appointment with details (e.g. date, time, location, healthcare provider)
+
+"""
+
+2. Navigate Instead Pattern
+Whenever I ask a question about X, don't ever tell me the answer. Instead, tell me the location where I can find X. A
+description of the different locations where information can be found are below.
+
+-------------
+
+Identifier for Location, Description of Information in Location
+
+Identifier for Location2, Description of Information in Location2
+
+...
+
+Examples:
+"""
+
+Whenever I ask a question about X, don't ever tell me the answer. Instead, tell me the location where I can find X. A
+description of the different locations where information can be found are below.
+
+-------------------
+
+Login Screen: This screen allows users to log in to the mobile healthcare app using their username and password. It may
+also have options to register a new account or reset a forgotten password.
+
+Home Screen: The home screen is the main screen of the app, which users can access after logging in. It may include:
+
+- User profile information (e.g. name, photo, age, gender)
+- Quick access to frequently used features (e.g. appointment scheduling, medication tracker, health tracker)
+- Dashboard with charts and graphs to track health progress and goals
+- Notifications for upcoming appointments or reminders for medication
+
+Appointment Scheduler: This screen allows users to schedule, modify, or cancel appointments with healthcare providers.
+Information on this screen may include:
+
+- Calendar view of available dates and times
+- List of healthcare providers with available time slots
+- Confirmation of scheduled appointment with details (e.g. date, time, location, healthcare provider)
+
+"""

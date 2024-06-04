@@ -1,0 +1,99 @@
+Prompt Patterns for Filtering & Citation
+
+Filtering is a useful application for generative AI, but it should be applied to information the user already has access
+to, not to decide what information the user should have access to. There needs to be a separate process to determine
+appropriate access. It should not be used to determine what information can be released to the outside world, but to
+support human reasoning.
+
+When using generative AI for filtering, traceability back to the original information is crucial. This allows fact checking
+by including identifiers like line numbers, quotations, etc.
+
+Variations like summarization and explanation can also be appropriate if traceability is maintained. However, we need to
+avoid tasks where incorrect outputs could lead to harmful downstream consequences.
+
+Filtering is a safe operation because the output is a subset of the input. This makes it easy to check that the filtered
+information is contained in the original.
+
+Blindly prompting for summaries or citations without providing source information is unlikely to work well. The AI needs
+original content to filter and cite.
+
+The key is using generative AI to augment human reasoning, not replace it. Tasks like medical decision-making may be better
+supported by directing users to human experts rather than generating direct advice.
+
+Filtering information is one of the most promising applications of generative AI. When implemented thoughtfully, filtering
+allows AI systems to efficiently process large amounts of data and extract the most relevant parts for human users. This
+can augment human analysis and decision-making. However, care must be taken to ensure filtering is done in a responsible
+and transparent manner. As the following points describe, filtering should be applied only to information the user has
+access to, traceability should be maintained, and the focus should remain on aiding human reasoning rather than replacing
+it. With the proper checks and limitations in place, filtering represents an exciting opportunity to leverage AI in a safe
+and productive way.
+
+Traceability refers to the ability to link outputs of an AI system back to the original inputs and data sources. When using
+generative AI for filtering information, maintaining traceability is crucial for fact-checking and accountability. This can
+be accomplished by having the AI provide identifiers from the original data for any filtered outputs it produces. For example,
+when summarizing a text document, the AI could reference specific line numbers or quotations supporting each generated
+summary sentence. Or if filtering a dataset, it could include unique IDs to trace each output row back to the original
+table. Traceability allows humans to easily verify that the AI's outputs are firmly rooted in the given inputs. Without
+traceability, it becomes difficult to audit the system's work or correct potential errors. Preserving this linkage between
+original data and filtered outputs promotes transparency and responsibility in leveraging generative AI.
+
+
+Filtering Patterns:
+1. Simple Filter Pattern
+Filter the following X to include / remove Y
+-------------
+Information to filter
+
+Examples:
+"""
+Filter this list of movies to only include those released after 2010:
+
+-------------------
+
+Forrest Gump, 1994 The Godfather, 1972 Inception, 2010 Toy Story, 1995 The Matrix, 1999 Frozen, 2013
+
+"""
+
+2. Semantic Filter Pattern
+Filter the following information to remove X
+Explain what you are going to remove and why
+Then, provide the filtered information
+-------------
+Information to filter
+
+Examples:
+"""
+Filter this list of movies to remove movies that have leading characters using regional accents that aren't their normal
+accent. Explain what you are going to remove and why. Then provide the filtered information with the original movie IDs included:
+
+-------------------
+
+M1. Forrest Gump, 1994
+M2. The Godfather, 1972
+M3. Inception, 2010
+M4. Toy Story, 1995
+M5. The Matrix, 1999
+M6. Frozen, 2013
+
+"""
+
+3. Summarize and Cite Pattern
+Summarize the key points from the following information. After each sentence in your summary, cite the IDs (or provide
+quotations) of the information that support it.
+-------------------
+
+Information to summarize
+
+Example:
+Summarize the key points from the following customer reviews. After each sentence in your summary, cite the review IDs that support it:
+-------------------
+
+R1. The food was delicious and the service was great. 5 stars!
+
+R2. Horrible experience. The staff was rude and the food was cold. 1 star.
+
+R3. Everything was pretty good but nothing special. 3 stars.
+
+R4. I go here all the time. Consistently good food and friendly waiters. Highly recommend!
+
+Summary:

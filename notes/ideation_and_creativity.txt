@@ -1,0 +1,38 @@
+Ideation and Creativity
+
+- The goal should be to inspire the human user, not replace them. Generative AI is a tool to spark creativity, imagination,
+    and new perspectives.
+- Ideation using AI involves generating ideas that the human then responds to, reacts to, and builds upon. The human is
+    still the key creator.
+- Ideation is cheap with AI - you can generate many ideas quickly, discard ones that don't resonate, and focus on ones
+    that inspire new thinking.
+- Generative AI is not meant to directly provide final work products or solutions. The human user should evaluate, refine,
+    and own the final output.
+- Fun, low-risk brainstorming about silly or hypothetical ideas is a great way to get creative juices flowing and see new angles.
+- Diagramming and visualizing complex topics and relationships can spur new insights when using AI to ideate.
+- The human should feel ownership over the ideation process and resulting ideas, not just take whatever the AI outputs.
+- Used appropriately as a creativity tool, generative AI holds great promise for augmenting human ideation and imagination.
+    But the human must direct the process.
+
+When used appropriately, generative AI has immense potential as a tool for augmenting human creativity. The key is
+recognizing that the technology should assist people in ideation, not replace them. With the right mindset and approach,
+humans can direct generative models like Claude to provide novel perspectives that spark imaginations.
+
+A major benefit of leveraging AI for ideation is the ability to quickly generate a wide range of unconventional ideas.
+While many may not prove fruitful, encountering unusual combinations or new angles on a topic can drive breakthrough thinking.
+Unlike a human brainstorming session, an AI system can rapidly produce dozens or even hundreds of new ideas to consider.
+People shouldn't expect perfection, but rather use the creative leaps as thought-starters.
+
+Another advantage is the use of visuals and diagrams. Generating images around a problem can assist in seeing it from new
+views. Things like concept maps, flow charts, and abstract representations of relationships enable us to recognize new
+patterns and opportunities. Interacting with visual artifacts produced via AI allows our spatial reasoning abilities to
+connect ideas in innovative ways.
+
+Of course, the human must remain the key driver behind ideation. One should approach AI as an imaginative partner rather
+than a source of definitive solutions. We must curate, refine, and build on what the technology provides. While judicious
+use of generative models opens new creative frontiers, humans must own the process and outcomes. By maintaining active
+engagement with the AI collaboration, we gain an expanded palette for innovation while retaining purpose and control.
+
+In the end, generative AI offers an exciting new means of empowering human imagination and ideation. By embracing it as
+a creative muse rather than oracle, we tap into revolutionary potential for developing visionary ideas and insights.
+Responsible use that keeps humans firmly in charge unlocks new problem-solving horizons.

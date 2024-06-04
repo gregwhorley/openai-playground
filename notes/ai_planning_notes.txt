@@ -1,0 +1,27 @@
+- break down plans into separate steps
+- try to break down larger plans into individual plans, breaking those down into steps as necessary
+- ask to refine the plan that is output
+- when prompting to execute on the plan, request that the results are saved during each step
+- take the opportunity to prompt for refinement of each step as it is executed,
+  - "at the start of each step, read the result of the last step and reflect to make sure the next step aligns with
+      the result of the prior step"
+- identify when a limit is reached and then act on that by prompting to summarize
+  - good reason to use a separate data store as a knowledge base or long term memory
+- "be the conductor" prompt to proceed with the plan when diving deeper into the plan
+- prompt to summarize or combine when plan is complete
+
+saving and reusing plans
+- seed the conversation with a prompt that summarizes a previous plan execution
+- prompt for improvement on the plan summary from previous prompt
+- explain what the problem was with the previous plan execution
+- prompt to review plan output, summarize, and then update the plan
+- in some cases, the plan is not concrete enough and requires prompting to write a separate step by step "subplan" that
+   explains how the larger plan's steps will be executed
+  - also prompt to provide key topics that will be covered in each step and ensure that they align with the prior stepf
+  - prompt to re-read the previous plan summary in order to find relevant info
+
+flipped interaction planning
+- prompt with a declarative statement explaining the task to be accomplished along with input then ask the LLM to ask
+   questions until it has enough info to build a step-by-step plan to accomplish the task
+- sometimes prompting to ask the questions one at a time is a better approach
+- 
